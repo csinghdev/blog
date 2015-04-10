@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-	<meta charset="UTF-8">
-	<title>CodeKamp | Create a new blog</title>
-	<style>
-	 #content{
-			display:block;
-			margin-bottom:15px;
-			margin-left:100px;
-	}
-	</style>
-</head>
-<body>
+<?php require "header.php" ?>
 <h1>Fill form to create a new blog : </h1>
 <form action="store.php" method="POST">
 <label for="id" >Enter Id : </label>
@@ -24,8 +11,4 @@
     	<textarea id="content" type="text" name="content" placeholder="Enter content here"/></textarea>
     <input type="submit" style="..." value="Create" >
 </form>
-<?php
-
-?>
-</body>
-</html>
+<?php require "footer.php" ?>

@@ -25,23 +25,7 @@ if(count($_POST))
 }
 ?>
 
-<!DOCTYPE html>
-<html>
-<head lang="en">
-	<meta charset="UTF-8">
-	<title>CodeKamp | Create a new blog</title>
-	<style>
-	 #content{
-			display:block;
-			margin-bottom:15px;
-			margin-left:100px;
-	}
-  .error{
-    background-color:red;
-  }
-	</style>
-</head>
-<body>
+<?php require "header.php" ?>
 <h1>Edit the blog : </h1>
 
 <?php
@@ -74,5 +58,4 @@ if(isset($error)){
     	<textarea id="content" type="text" name="content" /><?= $content ?></textarea>
     <input type="submit" style="..." value="Update" >
 </form>
-</body>
-</html>
+<?php require "footer.php" ?>
