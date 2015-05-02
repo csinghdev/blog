@@ -14,22 +14,18 @@
 </div>
 <div id="main5">
 <?php
-/*
-<!DOCTYPE html>
-<html>
-<head lang="en">
-	<meta charset="UTF-8">
-	<title>codekamp<?= $blog['title'] ?></title>
-</head>
-<body>
-<h1>Title : <?= $blog['title'] ?></h1>
-</body>
-</html>
-*/
+
 ?>
 		<h3>To edit this post </h3>
 		<?php
-			echo '<li><a href="edit.php?id=' . $id . '">' . "Click Here" . '</a></li>';
-			?>
+			if(isset($checkvar))
+			{
+				echo '<li><a href="edit.php?id=' . $id . '">' . "Click Here" . '</a></li>';
+			}
+			else
+			{
+				{echo '<a href="login.php">' . "Login" . '</a>';}
+			}
+		?>
 	</div>
 <?php require "footer.php" ?>

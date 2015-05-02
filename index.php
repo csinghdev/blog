@@ -18,10 +18,25 @@
 	</ul>
 	</div>
 	<div id="main2">
-		<h2>To add a new post </h2>
-		<a href="create.php">Click Here</a>
+		<h1>To add a new post </h1>
+		<?php
+		if(isset($checkvar))
+		{
+			echo '<a href="create.php">' . "Create a new post" . '</a>';
+		}
+		else
+		{
+			echo "Befor posting or editing a post you need to ";
+			echo '<a href="login.php">' . "Login" . '</a>';
+		}
+		?>
 </div>
 <div id="main3">
-	<p>For editing selct the blog then click on edit in the view page and then edit the blog.</p>
+	<h1>Create an Account</h1>
+	<p>To start writing blogs for this site , you need to create an account.</p>
+	<br>
+	<p>Click on Sign Up to create an account</p>
+	<br>
+	<a href="signup.php">Sign Up</a>
 </div>
 <?php require "footer.php" ?>

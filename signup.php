@@ -32,7 +32,7 @@ if (count($_POST))
   	<input id="email" type="email" name="email" placeholder="Enter email here"/>
   	<br><br>
     <label for="password" >Enter Password : </label>
-    	<input id="password" type="password" name="password" placeholder="Enter content here"/>
+    	<input id="password" type="password" name="password" placeholder="Enter password here"/>
     <input type="submit" style="..." value="Create" >
 </form>
 <?php require "footer.php" ?>

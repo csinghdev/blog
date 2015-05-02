@@ -7,6 +7,7 @@
 </head>
     <div id="header">
 			<img height="50px" width="50px" style="display:inline;" src="http://www.c-tides.iitm.ac.in/images/c-tides.png"/>
-			<h1 style="display:inline;">CodeKamp</h1>
-		</div>
+			<h1 style="display:inline;"><a id="site" href="index.php" >CodeKamp</a></h1>
+			<p id="para" ><?php require_once "cookiecheck.php" ?></p>
+					</div>
 <body background="http://thecutestblogontheblock.com/wp-content/uploads/2011/11/hilltop-hideaway-free-stretch-blog-background-wood-1000x500.jpg">
